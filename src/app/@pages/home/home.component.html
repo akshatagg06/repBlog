@@ -1,0 +1,59 @@
+<div class="row" *ngIf="loading">
+  <div class="col-lg">
+    <blog-loading></blog-loading>
+  </div>
+</div>
+<div class="row" *ngIf="!loading">
+  <div class="col-lg-8 col-md-10 mx-auto">
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="#">
+              <blog-poster-image [classValues]="'img-fluid rounded'" [src]="'http://placehold.it/200x200'">
+              </blog-poster-image>
+            </a>
+          </div>
+          <div class="col-lg-9">
+            <h2 class="card-title">Post Title</h2>
+            <blog-publish-info></blog-publish-info>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
+              nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
+              possimus, veniam magni quis!</p>
+            <blog-button></blog-button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+    <!-- Another one -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="#">
+              <blog-poster-image [classValues]="'img-fluid rounded'" [src]="'http://placehold.it/200x200'">
+              </blog-poster-image>
+            </a>
+          </div>
+          <div class="col-lg-9">
+            <h2 class="card-title">Post Title</h2>
+            <blog-publish-info></blog-publish-info>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
+              nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
+              possimus, veniam magni quis!</p>
+            <blog-button></blog-button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <blog-access-direct></blog-access-direct>
+  </div>
+
+</div>
